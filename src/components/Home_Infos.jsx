@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 export default function IntroSection() {
     return (
         <motion.div
-            className="mx-auto py-20 px-6 items-center justify-center text-center 
+            className="py-20 px-6 items-center justify-center text-center 
             text-white space-y-"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
 
         >
-            <motion.div className="flex flex-col p-25 flex-1 items-center justify-center text-center">
+            <motion.div className="flex flex-col flex-1 items-center justify-center text-center">
                 <motion.h1
                     className="text-4xl md:text-6xl font-bold"
                     initial={{ opacity: 0, y: -30 }}

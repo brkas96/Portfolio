@@ -42,9 +42,9 @@ export default function FeaturedProjects() {
         : projects.filter((p) => p.category === selectedCategory);
 
     return (
-        <div className="flex max-w-6xl mx-auto px-6 text-white">
+        <div className="max-w-6xl mx-auto px-6 text-white mt-10">
 
-            <div className="flex flex-col p-30">
+            <div className="flex flex-col">
                 <h2 className="text-4xl font-bold text-center mb-10">Projetos em Destaque</h2>
                 <div className="flex justify-center gap-4 mb-12 flex-wrap">
                     {categories.map((cat) => (

@@ -6,7 +6,7 @@ export default function Home() {
 
     return (
 
-        <div className="left-cards h-screen bg-gradient-to-r from-black via-purple-950 to-gray-900 text-white 
+        <div className="left-cards bg-transparent text-white 
         space-y-4">
             {imgErro ? (
                 <User className="w-12 h-12 text-gray-400 bg-gray-100 rounded-full p-2" />

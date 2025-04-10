@@ -39,7 +39,8 @@ body {
   min-height: 100vh;
   position: relative;
   /* importante para background funcionar */
-  overflow-x: hidden;
+  overflow-x: hidden; /*desativa o scroll na horizontal*/
+  /*overflow-y: hidden;*/ /*desativa o scroll na vertical*/
   z-index: 0;
 }
 
@@ -120,7 +121,7 @@ html {
 
 /*cards principais de cada aba (Home, Contact etc)*/
 .left-cards {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -10,7 +10,7 @@ const links = [
     { to: "/servicos", label: "Services" },
 ];
 
-export default function Servicos() {
+export default function FloatNavbar() {
     const location = useLocation();
 
     return (
@@ -35,5 +35,3 @@ export default function Servicos() {
         </motion.nav>
     );
 }
-
-

@@ -30,19 +30,19 @@ export default function ContactSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="h-screen flex flex-col mx-auto py-20 px-6 items-center justify-center text-center text-white"
+            className="flex flex-col h-screen mx-auto py-20 px-6 items-center justify-center text-center text-white"
         >
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="flex flex-grow text-4xl font-bold mb-6 text-center p-4"
+                className="flex text-4xl font-bold mb-6 mt-6 text-center"
             >
                 Contact 📩
             </motion.h2>
 
             <motion.div
-                className="flex justify-center gap-6 mb-10 text-slate-300"
+                className="flex justify-center gap-6 text-slate-300"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -66,7 +66,7 @@ export default function ContactSection() {
             >
                 <button
                     onClick={handleCopy}
-                    className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-lg text-sm"
+                    className="flex items-center mt-5 gap-2 bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-lg text-sm"
                 >
                     {copied ? <Check size={16} /> : <Clipboard size={16} />}
                     {copied ? "Email copiado!" : "Copiar e-mail"}

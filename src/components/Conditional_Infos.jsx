@@ -7,7 +7,7 @@ import ContactInfos from "../components/Contact_Infos";
 export default function ConditionalHomeInfos() {
     const location = useLocation();
 
-    const wrapperStyle = "flex flex-col h-screen";
+    const wrapperStyle = "";
 
     switch (location.pathname) {
         case "/":
