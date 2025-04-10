@@ -30,7 +30,7 @@ export default function IntroSection() {
                 </motion.p>
 
                 <motion.a
-                    href="/curriculo.pdf"
+                    href="/Portfolio/curriculo.pdf"
                     download
                     className="bg-white hover:bg-black text-white px-6 py-3 rounded-lg transition"
                     initial={{ opacity: 0, y: -10 }}
