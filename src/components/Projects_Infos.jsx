@@ -7,7 +7,7 @@ const projects = [
         title: "Bot de Automação",
         category: "Automação",
         description: "Automatiza conclusão de tarefas no Microsoft Rewards.",
-        image: "/Portfolio/perfil.jpeg",
+        image: "/Portfolio/projeto1.png",
         techs: ["Python", "Selenium"],
         github: "https://github.com/brkas96/MicrosoftRewards",
         demo: "https://youtube.com/demo",
@@ -16,7 +16,7 @@ const projects = [
         title: "Portfólio React",
         category: "Frontend",
         description: "Portfólio de ferramentas interativas com React (Repositorio privado com site de ferramentas em React. Somente com a exibição no pages público)",
-        image: "/Portfolio/perfil.jpeg",
+        image: "/Portfolio/projeto2.png",
         techs: ["React", "Tailwind", "Framer Motion"],
         github: "https://github.com/brkas96/portfolio",
         demo: "https://brkas.dev",
@@ -25,7 +25,7 @@ const projects = [
         title: "API de Produtos",
         category: "Backend",
         description: "REST API com Node.js, Express e MongoDB.",
-        image: "/Portfolio/perfil.jpeg",
+        image: "/Portfolio/projeto3.png",
         techs: ["Node.js", "MongoDB"],
         github: "https://github.com/brkas96/products-api",
         demo: "https://products-api-demo.vercel.app",
@@ -79,17 +79,17 @@ export default function FeaturedProjects() {
                             <div>
                                 <h3 className="text-3xl font-semibold mb-2">{project.title}</h3>
                                 <p className="text-slate-300 mb-4">{project.description}</p>
-                                <div className="flex gap-2 flex-wrap mb-4">
+                                <div className="flex justify-center gap-2 flex-wrap mb-4">
                                     {project.techs.map((tech, i) => (
                                         <span
                                             key={i}
-                                            className="bg-slate-700 px-3 py-1 rounded-full text-sm text-white"
+                                            className=" bg-slate-700 px-3 py-1 rounded-full text-sm text-white"
                                         >
                                             {tech}
                                         </span>
                                     ))}
                                 </div>
-                                <div className="flex gap-4">
+                                <div className="flex justify-center gap-4">
                                     <a
                                         href={project.github}
                                         target="_blank"
