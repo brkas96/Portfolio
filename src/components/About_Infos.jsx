@@ -32,9 +32,16 @@ export default function About() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.6 }}
             >
+                A Inteligência Artificial também tem sido uma grande aliada no meu dia a dia como desenvolvedor. Com domínio técnico e experiência prática, utilizo a IA como ferramenta para entender rapidamente o funcionamento de bibliotecas e frameworks, economizando tempo e evitando horas de leitura de documentação. Isso me permite focar na lógica, estrutura e construção dos meus projetos com muito mais eficiência.
+            </motion.p>
+            <motion.p
+                className="text-lg leading-relaxed"
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.8 }}
+            >
                 Sou movido por desafios e estou sempre buscando aprender algo novo. Fora do código, gosto de games, música e entender como as coisas funcionam no detalhe.
             </motion.p>
-            FALAR SOBRE COMO A IA ME AJUDA A PROGRAMAR
         </motion.div>
     );
 }
