@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="left-cards bg-transparent text-whitespace-y-4">
+    <div className="left-cards bg-transparent text-white">
       <h1 className="text-4xl font-bold">About Me</h1>
       <p className="mt-4 text-xl">I am a web developer specializing in Python.</p>
     </div>
