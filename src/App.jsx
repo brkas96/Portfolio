@@ -57,7 +57,7 @@ export default function App() {
         </div>
 
         {/* Infos laterais */}
-        <div className="overflow-y-auto">
+        <div className="flex h-screen justify-center text-center">
           <ConditionalHomeInfos />
         </div>
       </div>

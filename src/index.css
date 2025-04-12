@@ -121,7 +121,7 @@ html {
 
 /*cards principais de cada aba (Home, Contact etc)*/
 .left-cards {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

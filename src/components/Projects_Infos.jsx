@@ -15,7 +15,7 @@ const projects = [
     {
         title: "Portfólio React",
         category: "Frontend",
-        description: "Portfólio de ferramentas interativas com React (colocar as ferramentas do youtilities, porém só o pages, deixar o repositorio privado )",
+        description: "Portfólio de ferramentas interativas com React (Repositorio privado com site de ferramentas em React. Somente com a exibição no pages público)",
         image: "/Portfolio/perfil.jpeg",
         techs: ["React", "Tailwind", "Framer Motion"],
         github: "https://github.com/brkas96/portfolio",
@@ -45,7 +45,7 @@ export default function FeaturedProjects() {
         <div className="max-w-6xl mx-auto px-6 text-white mt-10">
 
             <div className="flex flex-col">
-                <h2 className="text-4xl font-bold text-center mb-10">Projetos em Destaque</h2>
+                <h2 className="text-4xl font-bold text-center mb-10 alling-center">Projetos em Destaque</h2>
                 <div className="flex justify-center gap-4 mb-12 flex-wrap">
                     {categories.map((cat) => (
                         <button
