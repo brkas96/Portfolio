@@ -39,8 +39,10 @@ body {
   min-height: 100vh;
   position: relative;
   /* importante para background funcionar */
-  overflow-x: hidden; /*desativa o scroll na horizontal*/
-  /*overflow-y: hidden;*/ /*desativa o scroll na vertical*/
+  overflow-x: hidden;
+  /*desativa o scroll na horizontal*/
+  /*overflow-y: hidden;*/
+  /*desativa o scroll na vertical*/
   z-index: 0;
 }
 
@@ -126,8 +128,13 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
