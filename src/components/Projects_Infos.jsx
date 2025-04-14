@@ -4,22 +4,23 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
     {
-        title: "Bot de Automação",
+        title: "Bot de Automação Web",
         category: "Automação",
-        description: "Automatiza conclusão de tarefas no Microsoft Rewards.",
+        description: "Automatiza a conclusão das missões no Microsoft Rewards, resgatando os pontos.",
         image: "/Portfolio/projeto1.png",
         techs: ["Python", "Selenium"],
         github: "https://github.com/brkas96/MicrosoftRewards",
-        demo: "https://youtube.com/demo",
+        demo: "https://youtube.com/demo", /*Linkg para baixar o exe no repositorio ou então um video 
+        demonstrarivo de como fazer pra funcionar */
     },
     {
         title: "Portfólio React",
         category: "Frontend",
-        description: "Portfólio de ferramentas interativas com React (Repositorio privado com site de ferramentas em React. Somente com a exibição no pages público)",
+        description: "Portfólio de ferramentas interativas online feitos com ReactJS",
         image: "/Portfolio/projeto2.png",
-        techs: ["React", "Tailwind", "Framer Motion"],
-        github: "https://github.com/brkas96/portfolio",
-        demo: "https://brkas.dev",
+        techs: ["React", "Tailwind", "Framer Motion", "Axios"],
+        github: "https://youtilities.vercel.app/",
+        demo: "https://youtilities.vercel.app/",
     },
     {
         title: "API de Produtos",
@@ -102,7 +103,7 @@ export default function FeaturedProjects() {
                                         href={project.demo}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition"
+                                        className="flex items-center gap-2 bg-white hover:bg-black text-white px-4 py-2 rounded-lg transition"
                                     >
                                         <ExternalLink size={18} /> Testar
                                     </a>

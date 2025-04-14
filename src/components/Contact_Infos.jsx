@@ -16,7 +16,7 @@ export default function ContactSection() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, "YOUR_PUBLIC_KEY")
+        emailjs.sendForm("service_kzwh5ia", "template_wotmxzp", form.current, "rh4cn--0UJ4Rhxwvu")
             .then(() => {
                 setSent(true);
                 form.current.reset();
@@ -84,14 +84,14 @@ export default function ContactSection() {
             >
                 <input
                     type="text"
-                    name="user_name"
+                    name="from_name"
                     placeholder="Seu nome"
                     required
                     className="w-full bg-slate-800 p-3 rounded-lg text-white outline-none"
                 />
                 <input
                     type="email"
-                    name="user_email"
+                    name="from_email"
                     placeholder="Seu email"
                     required
                     className="w-full bg-slate-800 p-3 rounded-lg text-white outline-none"
