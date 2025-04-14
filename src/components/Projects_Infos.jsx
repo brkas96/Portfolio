@@ -4,28 +4,28 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
     {
-        title: "Bot de Automação Web",
-        category: "Automação",
-        description: "Automatiza a conclusão das missões no Microsoft Rewards, resgatando os pontos.",
+        title: "Web Automation Bot",
+        category: "Automation",
+        description: "Automate the completion of missions in Microsoft Rewards by redeeming the points.",
         image: "/Portfolio/projeto1.png",
         techs: ["Python", "Selenium"],
-        github: "https://github.com/brkas96/MicrosoftRewards",
-        demo: "https://youtube.com/demo", /*Linkg para baixar o exe no repositorio ou então um video 
+        github: "https://github.com/brkas96/MicrosoftRewardsAuto",
+        demo: "https://github.com/brkas96/MicrosoftRewardsAuto/raw/refs/heads/main/dist/Microsoft%20Rewards%20Auto.exe", /*Linkg para baixar o exe no repositorio ou então um video 
         demonstrarivo de como fazer pra funcionar */
     },
     {
         title: "Portfólio React",
         category: "Frontend",
-        description: "Portfólio de ferramentas interativas online feitos com ReactJS",
+        description: "Portfolio of interactive online tools made with ReactJS.",
         image: "/Portfolio/projeto2.png",
         techs: ["React", "Tailwind", "Framer Motion", "Axios"],
         github: "https://youtilities.vercel.app/",
         demo: "https://youtilities.vercel.app/",
     },
     {
-        title: "API de Produtos",
+        title: "Product APIs",
         category: "Backend",
-        description: "REST API com Node.js, Express e MongoDB.",
+        description: "REST API with Node.js, Express and MongoDB.",
         image: "/Portfolio/projeto3.png",
         techs: ["Node.js", "MongoDB"],
         github: "https://github.com/brkas96/products-api",
@@ -33,12 +33,12 @@ const projects = [
     },
 ];
 
-const categories = ["Todos", "Frontend", "Backend", "Automação"];
+const categories = ["All", "Frontend", "Backend", "Automation"];
 
 export default function FeaturedProjects() {
-    const [selectedCategory, setSelectedCategory] = useState("Todos");
+    const [selectedCategory, setSelectedCategory] = useState("All");
 
-    const filteredProjects = selectedCategory === "Todos"
+    const filteredProjects = selectedCategory === "All"
         ? projects
         : projects.filter((p) => p.category === selectedCategory);
 
@@ -46,7 +46,7 @@ export default function FeaturedProjects() {
         <div className="max-w-6xl mx-auto px-6 text-white mt-10">
 
             <div className="flex flex-col">
-                <h2 className="text-4xl font-bold text-center mb-10 alling-center">Projetos em Destaque</h2>
+                <h2 className="text-4xl font-bold text-center mb-10 alling-center">Featured Projects</h2>
                 <div className="flex justify-center gap-4 mb-12 flex-wrap">
                     {categories.map((cat) => (
                         <button
@@ -105,7 +105,7 @@ export default function FeaturedProjects() {
                                         rel="noopener noreferrer"
                                         className="flex items-center gap-2 bg-white hover:bg-black text-white px-4 py-2 rounded-lg transition"
                                     >
-                                        <ExternalLink size={18} /> Testar
+                                        <ExternalLink size={18} /> Test
                                     </a>
                                 </div>
                             </div>
