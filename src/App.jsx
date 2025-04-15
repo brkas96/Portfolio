@@ -57,7 +57,7 @@ export default function App() {
         </div>
 
         {/* Infos laterais */}
-        <div className="flex h-screen justify-center text-center mb-20">
+        <div className="flex h-screen justify-center text-center">
           <ConditionalHomeInfos />
         </div>
       </div>
