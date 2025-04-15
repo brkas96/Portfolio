@@ -9,6 +9,7 @@ const links = [
     { to: "/projects", label: "Projects" },
     { to: "/contact", label: "Contact" },
     { to: "/servicos", label: "Services" },
+
 ];
 
 export default function FloatNavbar() {

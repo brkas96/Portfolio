@@ -1,4 +1,5 @@
 export default function About() {
+
   return (
     <div className="left-cards bg-transparent text-white">
       <h1 className="text-5xl font-bold">About Me</h1>

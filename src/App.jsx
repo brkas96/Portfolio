@@ -9,6 +9,7 @@ import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 import Servicos from "./pages/Serviços.jsx";
 import ConditionalHomeInfos from "./components/Conditional_Infos.jsx";
+import EfeitoFloco from "./context/Efeito_Floco.jsx";
 
 // Função para aplicar transições
 const withTransition = (Component) => (
@@ -50,6 +51,8 @@ export default function App() {
   return (
     <HashRouter>
       <div className="">
+        <EfeitoFloco />
+
         <FloatNavbar />
 
         <div className="">
