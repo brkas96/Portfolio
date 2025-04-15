@@ -30,7 +30,7 @@ export default function ContactSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col h-screen mx-auto py-20 px-6 items-center justify-center text-center text-white"
+            className="flex flex-col mx-auto py-20 px-6 items-center justify-center text-center text-white"
         >
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
