@@ -112,3 +112,31 @@ body,
 #root {
   min-height: 100dvh;
 }
+
+/* Terminal CSS */
+.terminal {
+  background-color: #000;
+  color: #00ff00;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background-color: #00ff00;
+  margin-left: 3px;
+  animation: blink 0.8s infinite step-end;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}

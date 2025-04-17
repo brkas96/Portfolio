@@ -10,6 +10,10 @@ import Contact from "./pages/Contact.jsx";
 import Servicos from "./pages/Serviços.jsx";
 import ConditionalHomeInfos from "./components/Conditional_Infos.jsx";
 import EfeitoFloco from "./context/Efeito_Floco.jsx";
+import LoadingScreen from "./context/Loading.jsx";
+import Terminal from "./context/Terminal.jsx";
+import Mascot from "./context/Mascot.jsx";
+import GtagPageTracker from "./context/G_Analytics.jsx";
 
 // Função para aplicar transições
 const withTransition = (Component) => (
@@ -49,21 +53,26 @@ const AnimatedRoutes = () => {
 // Componente principal
 export default function App() {
   return (
-    <HashRouter>
-      <div className="">
-        <EfeitoFloco />
-
-        <FloatNavbar />
-
+    <>
+      <LoadingScreen />
+      <HashRouter>
         <div className="">
-          <AnimatedRoutes />
-        </div>
+          <EfeitoFloco />
 
-        {/* Infos laterais */}
-        <div className="flex h-screen justify-center text-center">
-          <ConditionalHomeInfos />
+          <FloatNavbar />
+          
+          <div className="">
+            <AnimatedRoutes />
+            <GtagPageTracker />
+          </div>
+
+          {/* Infos laterais */}
+          <div className="flex h-screen justify-center text-center">
+            <ConditionalHomeInfos />
+          </div>
         </div>
-      </div>
-    </HashRouter>
+      </HashRouter>
+    </>
+
   );
 }
