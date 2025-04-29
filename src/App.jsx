@@ -14,6 +14,8 @@ import LoadingScreen from "./context/Loading.jsx";
 import Terminal from "./context/Terminal.jsx";
 import Mascot from "./context/Mascot.jsx";
 import GtagPageTracker from "./context/G_Analytics.jsx";
+import "./i18n/i18n.js"
+import Translation from "./i18n/LanguageSelector.jsx";
 
 // Função para aplicar transições
 const withTransition = (Component) => (
@@ -55,6 +57,7 @@ export default function App() {
   return (
     <>
       <LoadingScreen />
+      <Translation />
       <HashRouter>
         <div className="">
           <EfeitoFloco />

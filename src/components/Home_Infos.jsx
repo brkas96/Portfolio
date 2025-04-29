@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function IntroSection() {
+    const {t} = useTranslation();
+
     return (
         <motion.div
             className="flex flex-col h-screen items-center justify-center max-w-2xl px-4 space-y-6"
@@ -14,7 +17,7 @@ export default function IntroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                Turning ideas into code 💡💻
+                {t("Turning ideas into code")} 💡💻
             </motion.h1>
 
             <motion.p
@@ -23,7 +26,7 @@ export default function IntroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
-                I'm Bruno, a back-end developer passionate about building.
+                {t("I'm a back-end developer passionate about building scalable and efficient systems.")}
             </motion.p>
 
             <motion.a
@@ -34,7 +37,7 @@ export default function IntroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
             >
-                Download Resume
+                {t("Download Resume")}
             </motion.a>
         </motion.div>
     );

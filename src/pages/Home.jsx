@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { User } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
 
 export default function Home() {
     const [imgErro, setImgErro] = useState(false);
+    const {t} = useTranslation();
+
     return (
 
         <div className="left-cards bg-transparent text-white 
@@ -19,8 +23,8 @@ export default function Home() {
                 />
             )}
 
-            <h1 className="text-5xl font-bold mt-4 justify-center text-center">Hello, I'm Bruno! 👋</h1>
-            <p className="mt-4 text-xl">Welcome to my portfolio.</p>
+            <h1 className="text-5xl font-bold mt-4 justify-center text-center">{t("Hello, I'm Bruno!")} 👋</h1>
+            <p className="mt-4 text-xl">{t("Welcome to my portfolio.")}</p>
 
         </div>
 

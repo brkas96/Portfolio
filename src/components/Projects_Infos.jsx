@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const projects = [
     {
@@ -36,6 +37,8 @@ const projects = [
 const categories = ["All", "Frontend", "Backend", "Automation"];
 
 export default function FeaturedProjects() {
+    const {t} = useTranslation();
+
     const [selectedCategory, setSelectedCategory] = useState("All");
 
     const filteredProjects = selectedCategory === "All"
@@ -46,7 +49,7 @@ export default function FeaturedProjects() {
         <div className="max-w-6xl mx-auto px-6 text-white mt-10">
 
             <div className="flex flex-col">
-                <h2 className="text-4xl font-bold text-center mb-10 alling-center">Featured Projects</h2>
+                <h2 className="text-4xl font-bold text-center mb-10 alling-center">{t("Featured Projects")}</h2>
                 <div className="flex justify-center gap-4 mb-12 flex-wrap">
                     {categories.map((cat) => (
                         <button

@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { Github, Linkedin, Clipboard, Check, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function ContactSection() {
     const form = useRef();
@@ -25,6 +26,8 @@ export default function ContactSection() {
             .catch((err) => console.error(err));
     };
 
+    const {t} = useTranslation();
+
     return (
         <motion.section
             initial={{ opacity: 0, y: 40 }}
@@ -38,7 +41,7 @@ export default function ContactSection() {
                 transition={{ delay: 0.2 }}
                 className="flex text-4xl font-bold mb-6 mt-6 text-center"
             >
-                Contact 📩
+                {t("Contact")} 📩
             </motion.h2>
 
             <motion.div

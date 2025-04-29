@@ -28,7 +28,7 @@ export default function Servicos() {
     const location = useLocation();
 
     return (
-        <div className="min-h-screen flex items-center justify-center px-4">
+        <div className="min-h-screen flex items-center justify-center px-4 pb-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-6xl">
                 {services.map((service, idx) => (
                     <motion.div
