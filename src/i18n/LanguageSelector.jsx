@@ -9,7 +9,7 @@ export default function LanguageSwitcher() {
     };
 
     return (
-        <div className="fixed top-4 right-4 z-50">
+        <div className="hidden sm:block fixed top-4 right-4 z-50">
             <button onClick={() => setLang("en")} className="mr-2">EN</button>
             <button onClick={() => setLang("pt")}>PT</button>
         </div>
