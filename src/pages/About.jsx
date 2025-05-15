@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="left-cards bg-transparent text-white">
       <h1 className="text-5xl font-bold">{t("About Me")}</h1>
-      <p className="mt-4 text-xl">{t("I am a web developer specializing in Python.")}</p>
+      <p className="mt-4 text-xl">{t("I am a FullStack developer specializing in Python.")}</p>
     </div>
 
     /*<div className="left-cards bg-gradient-to-br 

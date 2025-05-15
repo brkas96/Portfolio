@@ -10,6 +10,9 @@ import Contact from "./pages/Contact.jsx";
 import Servicos from "./pages/Serviços.jsx";
 import ConditionalHomeInfos from "./components/Conditional_Infos.jsx";
 import EfeitoFloco from "./context/Efeito_Floco.jsx";
+import EfeitoMatrix from "./context/Efeito_Matrix.jsx";
+import EfeitoScan from "./context/Efeito_Scan.jsx";
+import EfeitoLinhas from "./context/Efeito_Linhas.jsx";
 import LoadingScreen from "./context/Loading.jsx";
 import Terminal from "./context/Terminal.jsx";
 import Mascot from "./context/Mascot.jsx";
@@ -60,7 +63,7 @@ export default function App() {
       <Translation />
       <HashRouter>
         <div className="">
-          <EfeitoFloco />
+          <EfeitoLinhas />
 
           <FloatNavbar />
           

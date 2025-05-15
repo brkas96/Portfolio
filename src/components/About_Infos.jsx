@@ -19,7 +19,7 @@ export default function About() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
             >
-                {t("Hi! I'm Bruno, a back-end developer passionate about turning ideas into code. Ever since I started programming, I’ve been fascinated by logic, automation, and how small solutions can create a big impact.")}
+                {t("I'm a fullstack developer passionate about turning ideas into code. Ever since I started programming, I’ve been fascinated by logic, automation, and how small solutions can create a big impact.")}
             </motion.p>
             <motion.p
                 className="text-lg leading-relaxed"

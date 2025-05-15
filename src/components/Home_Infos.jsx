@@ -26,7 +26,7 @@ export default function IntroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
-                {t("I'm a back-end developer passionate about building scalable and efficient systems.")}
+                {t("I'm a fullstack developer passionate about building scalable and efficient systems.")}
             </motion.p>
 
             <motion.a
